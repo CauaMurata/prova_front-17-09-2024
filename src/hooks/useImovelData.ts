@@ -4,13 +4,12 @@ import { ImovelData } from '../interface/ImovelData';
 
 const API_URL = 'http://localhost:8080';
 
-// Função para buscar dados
+
 const fetchData = async (): Promise<ImovelData[]> => {
     const response = await axios.get<ImovelData[]>(`${API_URL}/imovel`);
-    return response.data; // Retorne apenas os dados
+    return response.data; 
 }
 
-// Hook para usar dados de imóveis
 export function useImovelData() {
     const query = useQuery({
         queryFn: fetchData,
@@ -20,6 +19,6 @@ export function useImovelData() {
 
     return {
         ...query,
-        data: query.data // Dados já estão no formato esperado
+        data: query.data 
     };
 }

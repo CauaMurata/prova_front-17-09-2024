@@ -46,9 +46,9 @@
 }
 
 .card ul {
-    list-style-type: none;  /* Remove bullets */
-    padding: 0;  /* Remove padding */
-    margin: 10px 0;  /* Adicionar margem entre os elementos */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 10px 0;
 }
 
 .card li {
